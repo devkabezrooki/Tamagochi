@@ -36,10 +36,8 @@ public class Tamagochi extends ApplicationAdapter {
 		backgroundMusic.play();
 
 		tamagochi = new Rectangle();
-		tamagochi.x = 250;
+		tamagochi.x = 800 / 2-220/2;
 		tamagochi.y = 80;
-		tamagochi.width = 200;
-		tamagochi.height = 200;
 	}
 
 	@Override
@@ -60,7 +58,7 @@ public class Tamagochi extends ApplicationAdapter {
 			touchPos = new Vector3();
 			touchPos.set(Gdx.input.getX(), Gdx.input.getY(), 0);
 			camera.unproject(touchPos);
-			if(touchPos.x>250&&touchPos.x<450&&touchPos.y>80&&touchPos.x<280){
+			if(touchPos.x>tamagochi.x&&touchPos.x<tamagochi.x+220&&touchPos.y>tamagochi.y&&touchPos.x<tamagochi.y+220){
 				mewSound.play();
 			}
 		}
