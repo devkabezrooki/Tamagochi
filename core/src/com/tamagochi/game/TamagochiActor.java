@@ -43,7 +43,7 @@ public class TamagochiActor extends Actor {
         if(anim == 1)
         {
             stateTime += Gdx.graphics.getDeltaTime();
-            batch.draw((TextureRegion) clickAnimation.getKeyFrame(stateTime, false), Constants.WIDTH/2-tamagochiSprite.getWidth()/2, 90);
+            batch.draw((TextureRegion) clickAnimation.getKeyFrame(stateTime, false), Constants.WIDTH/2 - tamagochiSprite.getWidth()/2, 90);
 
             if(stateTime >= clickAnimation.getAnimationDuration()) //тут потом через кейсы ебануть
             {
