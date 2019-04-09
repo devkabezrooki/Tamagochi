@@ -24,7 +24,7 @@ public class TamagochiActor extends Actor {
 
     public TamagochiActor() {
         clickAtlas = new TextureAtlas(Gdx.files.internal("clickatlas1.atlas"));
-        clickAnimation =new Animation(0.2f, clickAtlas.getRegions());
+        clickAnimation = new Animation(0.2f, clickAtlas.getRegions());
         tamagochiSprite = new Sprite(new Texture(Gdx.files.internal("TamagochiCat.png")));
         mewSound = Gdx.audio.newSound(Gdx.files.internal("mew.wav"));
         setTouchable(Touchable.enabled);
